@@ -1,0 +1,23 @@
+.video-item {
+    display: flex !important;
+    align-items: center !important;
+    cursor: pointer;
+}
+
+.video-item.item img {
+    max-width: 200px;
+    max-height: 250px ;
+}	
+
+.text-center {
+	text-align: center;
+}
+.youtube-label {
+	text-align: center;
+	color: red !important;
+	font-size: 30px !important;
+	padding: 20px;
+}
+.m-t-40 {
+	margin-top: 40px;
+}
