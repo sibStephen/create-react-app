@@ -10,8 +10,8 @@ state = {
     videos: [],
     selectedVideo: null
 }
-handleSubmit = async (termFromSearchBar) => {
-    const KEY = 'AIzaSyAFUNYmE1gfydRFrlb3Q05gXlPSgQmiY6I';
+handleSubmit = async (keyword) => {
+    const KEY = 'AIzaSyC6kGUdDVjdyz03rvxUojAk0APr4Cts0RM';
 
     const response =  await axios.create({
         baseURL: 'https://www.googleapis.com/youtube/v3/',
@@ -22,7 +22,7 @@ handleSubmit = async (termFromSearchBar) => {
         }
         }).get('/search', {
         params: {
-            q: termFromSearchBar
+            q: keyword
         }
     })
     this.setState({

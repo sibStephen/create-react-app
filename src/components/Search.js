@@ -10,7 +10,7 @@ class Searchbar extends React.Component {
             term: event.target.value
         });
     };
-    handleSubmit = event => {
+    handleSubmit = (event) => {
         event.preventDefault();
         debugger;
         this.props.handleFormSubmit(this.state.term);
@@ -20,7 +20,7 @@ class Searchbar extends React.Component {
         return (
             <form onSubmit={this.handleSubmit} className='ui form'>
                 <div className='field'>
-                    <label class="youtube-label" htmlFor="video-search">My Youtube</label>
+                    <label className="youtube-label" htmlFor="video-search">My Youtube</label>
                     <input onChange={this.handleChange} name='video-search' placeholder="Search any videos from youtube" type="text" value={this.state.term}/>
                 </div>
             </form>
